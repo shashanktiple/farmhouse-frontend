@@ -1,0 +1,40 @@
+@use 'src/root/root.scss';
+
+.container-dropdown{
+   
+    box-sizing: border-box;
+    background-color: #{root.$theme-light-color};
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #313131;
+
+
+    .wrapper-dropdown{
+        width: 100%;
+        box-sizing: border-box;
+        display: grid;
+        max-width: 1440px;
+         margin: auto;
+
+        .elements{
+            display: grid;
+            grid-auto-flow: row;
+            justify-self: end;
+            width: 11.5rem;
+            overflow: hidden;
+
+            background-color: whitesmoke;
+
+            a{
+                cursor: pointer;
+                padding: 10px;
+                transition: 0.3s;
+
+                &:hover{
+                    background-color: #{root.$theme-light-color};
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,165 @@
+@use "src/root/root.scss";
+
+.menu-container {
+  background-color: #{root.$theme-light-color};
+  width: 100%;
+  height: 100vh;
+  padding: 5rem 02rem;
+  box-sizing: border-box;
+
+  .menu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-area: "out_row";
+    padding: 0% 10%;
+
+    .out_row {
+      grid-area: "out_row";
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 3fr;
+      grid-area: "top_inner_row" "bottom_inner_row";
+      margin-bottom: 2rem;
+      .top_inner_row {
+        grid-area: "top_inner_row";
+        font-family: Port Lligat Sans;
+        font-weight: 400;
+        font-size: 25px;
+        box-sizing: border-box;
+      }
+      .bottom_inner_row {
+        grid-area: "bottom_inner_row";
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        font-family: Port Lligat Sans;
+        font-weight: 400;
+        font-size: 25px;
+
+        .order {
+          grid-area: "order";
+          width: 200px;
+          height: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #a5c58d;
+          cursor: pointer;
+        }
+        .address {
+          grid-area: "address";
+          width: 200px;
+          height: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #a5c58d;
+          cursor: pointer;
+        }
+        .profile {
+          grid-area: "profile";
+          width: 200px;
+          height: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #a5c58d;
+          cursor: pointer;
+        }
+        .wishlist {
+          grid-area: "wishlist";
+          width: 200px;
+          height: 90px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #a5c58d;
+          cursor: pointer;
+        }
+      }
+    }
+    .details {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 7fr;
+      grid-area: "top-inner-row" "bottom-inner-row";
+      overflow: hidden;
+
+
+      .top-inner-row {
+        grid-area: "top-inner-row";
+        display: flex;
+        padding: 0% 3%;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #999999;
+        height: 2rem;
+        font-family: Port Lligat Sans;
+        font-size: 15px;
+        font-weight: 400;
+
+        .order-date {
+        }
+        .order-number {
+        }
+      }
+
+      .bottom-inner-row {
+        grid-area: "bottom-inner-row";
+        display: grid;
+        height: 12rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-area: "image amount order-details";
+        background-color: #d9d9d9;
+
+        .image {
+          grid-area: "image";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          img {
+            width: 10em;
+          }
+        }
+        .amount {
+          grid-area: "amount";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+        }
+        .order-details {
+          grid-area: "order-details";
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+
+          font-family: Port Lligat Sans;
+          font-weight: 400;
+
+          .order-status {
+            font-size: 25px;
+          }
+          .view-order-details {
+            width: 200px;
+            height: 40px;
+            border: 0;
+            font-size: 20px;
+
+            background-color: #ecf00b;
+            cursor: pointer;
+          }
+          .view-order-details:active {
+            transform: translateY(2px);
+          }
+        }
+      }
+    }
+  }
+}

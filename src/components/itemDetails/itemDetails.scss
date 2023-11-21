@@ -1,0 +1,77 @@
+@use "src/root/root.scss";
+
+
+
+.item-detail-container{
+
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+
+    background-color: #{root.$theme-light-color};
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    .wrapper-contents{
+        display: grid;
+        grid-auto-flow: row;
+        width: 100%;
+        max-width: #{root.$width};
+        margin: 0 auto;
+        align-items: center;
+        gap: 2rem;
+        
+        .top-section{
+            display: grid;
+            grid-auto-flow: column;
+
+            
+                img{
+                    cursor: pointer;
+                }
+            }
+
+        .bottom-section{
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-columns: 1fr 3fr 5fr;
+            grid-gap: 2rem;
+            
+            
+            .left-section{
+                display: grid;
+                grid-auto-flow: row;
+                grid-gap: 1rem;
+
+                .img-wrapper{
+                    border: 1px solid #aeca93;
+                    padding: 0.5rem;
+                    justify-content: center;
+                    display: flex;
+                    width: 5rem;
+
+                
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+
+            .middle-section{
+                .img-wrapper{
+                    border: 1px solid #aeca93;
+                    padding: 0.5rem;
+                    justify-content: center;
+                    display: flex;
+                    width: clamp(15rem, 15vw, 20rem);
+
+
+                
+                    img{
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

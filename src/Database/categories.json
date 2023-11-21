@@ -1,0 +1,21 @@
+
+
+   [
+    {
+      "id": 1,
+      "name": "All"
+    },
+    {
+      "id": 2,
+      "name": "vegetables"
+    },
+    {
+      "id": 3,
+      "name": "dairy"
+    },
+    {
+        "id": 4,
+        "name": "fruits"
+      }
+  ]
+

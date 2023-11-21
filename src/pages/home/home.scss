@@ -1,0 +1,76 @@
+@use "src/root/root.scss";
+.container {
+  background: url("/assets/img/home_bg.png") no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  max-width: #{root.$width};
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 1fr;
+  grid-template-areas:
+    "lt rt"
+    "lb rb";
+
+  box-sizing: border-box;
+
+  .left-top {
+    grid-area: lt;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 4rem;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    p {
+      display: flex;
+      align-items: center;
+      font-family: Noto Serif Tamil Slanted;
+      font-weight: 400;
+      font-size: 60px;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    #shopnow {
+      position: relative;
+      width: 130px;
+      height: 60px;
+      background-color: #{root.$theme-light-color};
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: Noto Serif Tamil Slanted;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #shopnow:hover {
+      background-color: #e4e75b;
+    }
+    #shopnow:active {
+      transform: translateY(2px);
+    }
+  }
+
+  .left-bottom {
+    grid-area: lb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Noto Serif Tamil Slanted;
+    font-weight: 400;
+  }
+
+  .right-bottom {
+    grid-area: rb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Porter Sans Block;
+    font-size: 80px;
+    font-weight: 400;
+  }
+}

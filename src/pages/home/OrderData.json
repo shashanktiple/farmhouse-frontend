@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "infoProduct": "onion",
+    "paymentMode": "visa",
+    "orderDate": "02/30/2023",
+    "status": "completed",
+    "addressid": 1
+  },
+  {
+    "id": 2,
+    "infoProduct": "sp",
+    "paymentMode": "mastercard",
+    "orderDate": "2/2/2022",
+    "status": "delivered",
+    "addressid": 1
+  }
+]
